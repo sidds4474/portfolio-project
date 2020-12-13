@@ -1,21 +1,20 @@
-
 import Header from '../shared/Header'
 
-const baseLayout=(props)=>{
-
-  return(
-    <>
-    <Header />
-    {props.children}
-    </>
-
+const BaseLayout = props => {
+  const { className, children } = props
+  return (
+    <div className="layout-container">
+      <Header />
+      <main className={`cover ${className}`}>
+        <div className="wrapper">
+          {children}
+        </div>
+      </main>
+    </div>
   )
-
-
 }
 
-
-export default baseLayout
+export default BaseLayout
 
 
 // height :small

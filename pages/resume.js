@@ -2,16 +2,16 @@
 import React from 'react'
 import BaseLayout from '../components/layouts/baseLayout'
 
-class CV extends React.Component{
+class Resume extends React.Component{
   render(){
 
     return(
       <BaseLayout>
-      <h1>CV Page</h1>
+      <h1>Resume Page</h1>
       </BaseLayout>
     )
   }
 
 
 }
-export default CV
+export default Resume
