@@ -19,10 +19,9 @@ class Index extends React.Component {
                       <div className="hero-section-content">
                         <h2> Full Stack Developer </h2>
                         <div className="hero-section-content-intro">
-                          Have a look at my portfolio and job history.
                         </div>
                       </div>
-                      <img className="image" src="/images/section-1.png"/>
+                      <img className="image" src="/images/section-11.jpg"/>
                       <div className="shadow-custom">
                         <div className="shadow-inner"> </div>
                       </div>
@@ -38,7 +37,7 @@ class Index extends React.Component {
                 </div>
                 <div className="hero-welcome-bio">
                   <h1>
-                    I hope you like my work...
+                  Have a look at my portfolio and job history.
                   </h1>
                 </div>
               </Col>
