@@ -1,8 +1,17 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import { Container, Row, Col } from 'reactstrap';
+import Typed from 'react-typed';
 
 class Index extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.roles = ["I'm a Student",'Developer', 'Tech Lover', 'Team Player','I code in React.js','Nodejs','Java'];
+  }
+
+
+
   render() {
     return (
       <BaseLayout className="cover">
@@ -35,6 +44,17 @@ class Index extends React.Component {
                     Hey All, I'm Siddharth Saxena
                   </h1>
                 </div>
+                <Typed
+                  loop
+                  typeSpeed={70}
+                  backSpeed={70}
+                  strings={this.roles}
+                  backDelay={1000}
+                  loopCount={0}
+                  showCursor
+                  className="self-typed"
+                  cursorChar="|"
+                />
                 <div className="hero-welcome-bio">
                   <h1>
                   Have a look at my portfolio and job history.
