@@ -6,56 +6,58 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-  NavbarText
+  NavItem
 } from 'reactstrap';
 
 
 const BsNavLink = props => {
-  const { route, title } = props;
+  const { href, title } = props;
   return (
-    <Link href={route}>
-      <a className="nav-link">{title}</a>
+    <Link href={href}>
+      <a className="nav-link port-navbar-link">{title}</a>
     </Link>
   )
 }
 
-class Header extends React.Component {
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
-  state = { isOpen: false }
-  toggle = () => this.setState({isOpen: !this.state.isOpen})
-
-  render() {
-    const { isOpen } = this.state;
-    return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Siddharth Saxena</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <BsNavLink route="/" title="Home"/>
-              </NavItem>
-              <NavItem>
-                <BsNavLink route="/about" title="About"/>
-              </NavItem>
-              <NavItem>
-                <BsNavLink route="/projects" title="Project"/>
-              </NavItem>
-              <NavItem>
-                <BsNavLink route="/blog" title="Blog"/>
-              </NavItem>
-              <NavItem>
-                <BsNavLink route="/resume" title="Resume"/>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Navbar
+        className="port-navbar port-default absolute"
+        color="transparent"
+        dark
+        expand="md">
+        <NavbarBrand>
+          <Link href="/">
+            <a className="port-navbar-brand">Portfolio App</a>
+          </Link>
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem className="port-navbar-item">
+              <BsNavLink href="/" title="Home"/>
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <BsNavLink href="/about" title="About"/>
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <BsNavLink href="/projects" title="Projects"/>
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <BsNavLink href="/blog" title="Blog"/>
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <BsNavLink href="/resume" title="Resume"/>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
 }
 
 export default Header;

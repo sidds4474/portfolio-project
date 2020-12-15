@@ -1,6 +1,11 @@
 // Pages
 @import './index';
 
+
+// Components
+@import './header';
+
+
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/Montserrat-Bold.ttf');
@@ -20,3 +25,8 @@ html, body {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+.absolute {
+  position: absolute;
+}
+
