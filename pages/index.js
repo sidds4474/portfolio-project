@@ -1,18 +1,11 @@
-import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import { Container, Row, Col } from 'reactstrap';
 import Typed from 'react-typed';
 
-class Index extends React.Component {
 
-  constructor(props){
-    super(props);
-    this.roles = ["I'm a Student",'Developer', 'Tech Lover', 'Team Player','I code in React.js','Nodejs','Java'];
-  }
+  const ROLES = ["I'm a Student",'Developer', 'Tech Lover', 'Team Player','I code in React.js','Nodejs','Java'];
 
-
-
-  render() {
+  const Index = () => {
     return (
       <BaseLayout className="cover">
         <div className="main-section">
@@ -48,7 +41,7 @@ class Index extends React.Component {
                   loop
                   typeSpeed={70}
                   backSpeed={70}
-                  strings={this.roles}
+                  strings={ROLES}
                   backDelay={1000}
                   loopCount={0}
                   showCursor
@@ -67,6 +60,5 @@ class Index extends React.Component {
       </BaseLayout>
     )
   }
-}
-
-export default Index;
+  
+  export default Index;

@@ -10,7 +10,7 @@ import {
 } from 'reactstrap';
 
 
-const BsNavLink = props => {
+function BsNavLink(props){
   const { href, title } = props;
   return (
     <Link href={href}>
@@ -19,7 +19,13 @@ const BsNavLink = props => {
   )
 }
 
-const Header = () => {
+const BsNavBrand = () =>
+  <Link href="/">
+    <a className="navbar-brand port-navbar-brand">Portfolio App</a>
+  </Link>
+
+
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -30,11 +36,7 @@ const Header = () => {
         color="transparent"
         dark
         expand="md">
-        <NavbarBrand>
-          <Link href="/">
-            <a className="port-navbar-brand">Portfolio App</a>
-          </Link>
-        </NavbarBrand>
+        <BsNavBrand />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

@@ -1,17 +1,14 @@
+import BaseLayout from '../components/layouts/BaseLayout';
+import BasePage from '../components/BasePage';
 
-import React from 'react'
-import BaseLayout from '../components/layouts/baseLayout'
-
-class Resume extends React.Component{
-  render(){
-
-    return(
-      <BaseLayout>
-      <h1>Resume Page</h1>
-      </BaseLayout>
-    )
-  }
-
-
+function Resume(){
+  return (
+    <BaseLayout>
+      <BasePage>
+        <h1>Resume Page</h1>
+      </BasePage>
+    </BaseLayout>
+  )
 }
-export default Resume
+
+export default Resume;
