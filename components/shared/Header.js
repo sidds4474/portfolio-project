@@ -18,18 +18,19 @@ function BsNavLink(props){
   )
 }
 
-const BsNavBrand = () =>
-  <Link href="/">
+function BsNavBrand () {
+  return <Link href="/">
     <a className="navbar-brand port-navbar-brand">Portfolio App</a>
   </Link>
+}
 
 
 function LoginLink(){
-  return <span className="nav-link port-navbar-link clickable">Login</span>
+  return <a className="clickable" href="/api/v1/login">Login</a>
 }
 
 function LogoutLink(){
-  return <span className="nav-link port-navbar-link clickable">Logout</span>
+  return <span className="clickable">Logout</span>
 }
 
 

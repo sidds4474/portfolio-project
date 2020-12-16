@@ -3,23 +3,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/main.scss";
 
-
-class App extends React.Component {
-
-  static async getInitialProps({Component, ctx}) {
-    let pageProps = {};
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx);
-    }
-
-    return { pageProps };
-  }
-
-  render() {
-    const { Component, pageProps } = this.props;
+  const App=({Component,pageProps})=>{
+    console.log(process.env.AUTH0_DOMAIN)
     return <Component {...pageProps} />
   }
-}
+
 
 export default App;

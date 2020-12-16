@@ -1,6 +1,6 @@
 import Header from '../shared/Header'
 
-const BaseLayout = props => {
+function BaseLayout (props){
   const { className, children } = props
   return (
     <div className="layout-container">

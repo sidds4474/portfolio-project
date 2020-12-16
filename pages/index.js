@@ -20,8 +20,6 @@ import Typed from 'react-typed';
                     <div className="back">
                       <div className="hero-section-content">
                         <h2> Full Stack Developer </h2>
-                        <div className="hero-section-content-intro">
-                        </div>
                       </div>
                       <img className="image" src="/images/section-11.jpg"/>
                       <div className="shadow-custom">
