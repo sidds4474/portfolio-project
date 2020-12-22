@@ -30,7 +30,7 @@ function LoginLink(){
 }
 
 function LogoutLink(){
-  return <span className="clickable">Logout</span>
+  return <a className="clickable" href="/api/v1/logout">Logout</a>
 }
 
 
