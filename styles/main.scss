@@ -1,9 +1,12 @@
 // Pages
 @import './index';
 
+@import './newPage.css';
 
 // Components
 @import './header';
+
+@import './project';
 
 
 @font-face {
@@ -30,7 +33,7 @@ html, body {
   position: absolute;
 }
 .base-page {
-  padding-top: 150px;
+  padding-top: 120px;
   color: rebeccapurple;
 }
 .clickable {
