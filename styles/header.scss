@@ -5,11 +5,11 @@
 
   .port-navbar {
     &-brand {
-      font-size: 24px;
+      font-size: 30px;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: bold;
-      background: -webkit-linear-gradient(rgb(245, 243, 243), rgb(3, 1, 1));
+      background: -webkit-linear-gradient(rgb(245, 243, 243), rgb(73, 233, 10));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
@@ -21,7 +21,7 @@
     }
 
     &-link {
-      color: black;
+      color: whitesmoke;
       font-weight: bold;
       letter-spacing: 0.8px;
       font-size: 18px;
@@ -32,7 +32,7 @@
       }
 
       &:hover, &:focus {
-        color: rgb(65, 32, 209);
+        color: yellow;
       }
     }
   }

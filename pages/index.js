@@ -30,8 +30,11 @@ import Typed from 'react-typed';
               </Col>
               <Col md="6" className="hero-welcome-wrapper">
                 <div className="hero-welcome-text">
+                  <h2>
+                    Welcome to my Portfolio App
+                  </h2>
                   <h1>
-                    Welcome to my Portfolio App. Have a look at my Projects, Blogs and Resume.
+                  EXPLORE
                   </h1>
                 </div>
               </Col>
