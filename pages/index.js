@@ -19,9 +19,8 @@ import Typed from 'react-typed';
                   <div className={`flipper`}>
                     <div className="back">
                       <div className="hero-section-content">
-                        <h2> Full Stack Developer </h2>
                       </div>
-                      <img className="image" src="/images/section-11.jpg"/>
+                      <img className="image" src="/images/banner-image.png"/>
                       <div className="shadow-custom">
                         <div className="shadow-inner"> </div>
                       </div>
@@ -32,23 +31,7 @@ import Typed from 'react-typed';
               <Col md="6" className="hero-welcome-wrapper">
                 <div className="hero-welcome-text">
                   <h1>
-                    Hey All, I'm Siddharth Saxena
-                  </h1>
-                </div>
-                <Typed
-                  loop
-                  typeSpeed={70}
-                  backSpeed={70}
-                  strings={ROLES}
-                  backDelay={1000}
-                  loopCount={0}
-                  showCursor
-                  className="self-typed"
-                  cursorChar="|"
-                />
-                <div className="hero-welcome-bio">
-                  <h1>
-                  Have a look at my portfolio and job history.
+                    Welcome to my Portfolio App. Have a look at my Projects, Blogs and Resume.
                   </h1>
                 </div>
               </Col>

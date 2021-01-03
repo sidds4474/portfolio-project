@@ -11,12 +11,13 @@ const index = () => {
 			</Head>
 			<div className="container">
 				<header>
-				<img src="/images/logo.png" />
+				<img src="/images/PORTFOLIO.png" />
 					<ul>
-						<li>Productos</li>
-						<li>Sobre nosotros</li>
-						<li>Videos</li>
-						<li>Donde comprar</li>
+						<li>HOME</li>
+						<li>ABOUT</li>
+						<li>PROJECTS</li>
+						<li>BLOG</li>
+            <li>RESUME</li>
 					</ul>
 					<motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <img src="/images/basket.svg" />
@@ -25,34 +26,34 @@ const index = () => {
 				</header>
 				<div className="contenido">
 					<div className="info">
-						<h1>Lorem ipsum dolor sit amet, consectetur</h1>
-						<div className="name">Pizza box</div>
+						<h1>Welcome to my...</h1>
+						<div className="name">PORTFOLIO APP</div>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
 							aliquam, purus sit amet luctus venenatis, lectus magna fringilla
 							urna.
 						</p>
-						<div className="price">$15.98</div>
-						<motion.button
+						{/* <motion.button
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 0.9 }}
 						>
 							<img src="/images/basket-white.svg" />
 							<span>Añadir al carrito</span>
-						</motion.button>
+						</motion.button> */}
+            
 					</div>
 					<div className="img-container">
-					<img src="/images/pizza.jpg" />
+					<img src="/images/section-1.jpg" />
 					</div>
 					<div className="social-buttons">
-						<div className="links">
+						{/* <div className="links">
 							<a href="" target="_blank">
 								Instagram
 							</a>
 							<a href="" target="_blank">
 								Facebook
 							</a>
-						</div>
+						</div> */}
 						<div className="btns">
 							<motion.button
 								whileHover={{ scale: 1.1 }}
