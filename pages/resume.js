@@ -12,3 +12,6 @@ function Resume(){
 }
 
 export default Resume;
+
+
+//// "start": "cross-env NODE_ENV=production node server.js",
