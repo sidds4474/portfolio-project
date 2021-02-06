@@ -1,4 +1,4 @@
-import BaseLayout from '../components/layouts/BaseLayout';
+import BaseLayout from '../components/layouts/baseLayout';
 import BasePage from '../components/BasePage';
 //import withAuth from '../hoc/withAuth';
 import { Row, Col } from 'reactstrap';

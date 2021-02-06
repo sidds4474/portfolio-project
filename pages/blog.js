@@ -1,4 +1,4 @@
-import BaseLayout from '../components/layouts/BaseLayout';
+import BaseLayout from '../components/layouts/baseLayout';
 import BasePage from '../components/BasePage';
 
 function Blogs(){
