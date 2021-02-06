@@ -4,7 +4,7 @@ import Typed from 'react-typed';
 
 
   const ROLES = ["Student",'Developer', 'Tech Lover', 'Team Player'];
-  const language=['I code in React.js,Nodejs and Java'];
+  const language=['I code in React.js,Nodejs and Java.'];
 
   const Index = () => {
     return (
@@ -36,9 +36,10 @@ import Typed from 'react-typed';
                     Hey All, I'm Siddharth Saxena and I'm a ...
                   </h1>
                 </div>
+                <div>
                 <Typed
                   loop
-                  typeSpeed={30}
+                  typeSpeed={60}
                   backSpeed={100}
                   strings={ROLES}
                   backDelay={1000}
@@ -47,7 +48,10 @@ import Typed from 'react-typed';
                   className="self-typed"
                   cursorChar="|"
                 />
+                </div>
                 <Typed
+                typeSpeed={100}
+                backSpeed={100}
                   strings={language}
                   backDelay={1000}
                   className="self-typed"
