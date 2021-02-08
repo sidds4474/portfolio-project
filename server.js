@@ -13,7 +13,7 @@ app.prepare().then(() => {
     return handle(req, res);
   })
 
-  const PORT = process.env.PORT || 3001;
+  const PORT = process.env.PORT || 3003;
   server.listen(PORT, (err) => {
     if (err) { console.log(err); }
     console.log(`> Ready on port ${PORT}`)
